@@ -1,0 +1,25 @@
+﻿<Window x:Class="VisionMixer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Launcher" Height="418" Width="525" Icon="/VisionMixer;component/Resources/icon.png">
+    <Grid>
+        <Button Height="90" HorizontalAlignment="Left" Margin="12,12,0,0" Name="LeagueOfLegendsButton" VerticalAlignment="Top" Width="479">
+            <StackPanel Orientation="Horizontal" Margin="10" Width="447">
+                <Image Source="/VisionMixer;component/Resources/League_of_Legends_logo.png" Width="159" Height="61" Margin="0,0,10,0"/>
+                <TextBlock VerticalAlignment="Center" FontSize="28" FontFamily="Resources/friz.ttf#ITC Friz Quadrata" FontWeight="Bold">League of Legends</TextBlock>
+            </StackPanel>
+        </Button>
+        <Button Height="90" HorizontalAlignment="Left" Margin="12,117,0,0" Name="Starcraft2Button" VerticalAlignment="Top" Width="479" Click="Starcraft2Button_Click">
+            <StackPanel Orientation="Horizontal" Margin="10" Width="447">
+                <Image Source="/VisionMixer;component/Resources/starcraft2-logo.png" Width="159" Height="61" Margin="0,0,10,0"/>
+                <TextBlock VerticalAlignment="Center" FontSize="28" FontFamily="Resources/friz.ttf#ITC Friz Quadrata" FontWeight="Bold">Starcraft 2</TextBlock>
+            </StackPanel>
+        </Button>
+        <Button Height="73" Margin="141,294,135,12" Name="SettingsButton" Width="227" Click="SettingsButton_Click">
+            <StackPanel Margin="0" Orientation="Horizontal" Width="188">
+                <Image Height="64" Margin="0,0,10,0" Source="/VisionMixer;component/Resources/settings-icon.png" Width="64" />
+                <TextBlock FontFamily="Resources/friz.ttf#ITC Friz Quadrata" FontSize="28" FontWeight="Bold" VerticalAlignment="Center">Settings</TextBlock>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>
