@@ -80,6 +80,7 @@
     <Compile Include="ATEMSwitcher.xaml.cs">
       <DependentUpon>ATEMSwitcher.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>

@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Globalization;
 
 namespace VisionMixer
 {
@@ -21,6 +22,24 @@ namespace VisionMixer
         public Starcraft2()
         {
             InitializeComponent();
+        }
+    }
+
+    public class IsGreaterThanConverter : IValueConverter
+    {
+        public static readonly IValueConverter Instance = new IsGreaterThanConverter();
+
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            int intValue = (int)value;
+            int compareToValue = (int)parameter;
+
+            return intValue > compareToValue;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
         }
     }
 }
