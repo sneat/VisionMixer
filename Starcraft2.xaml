@@ -3,6 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Starcraft2" Height="400" Width="779" xmlns:my="clr-namespace:VisionMixer" Icon="/VisionMixer;component/Resources/icon.png">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="339*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="260" />
             <ColumnDefinition Width="500*" />
@@ -63,5 +67,10 @@
         </ComboBox>
         <TextBox Height="23" HorizontalAlignment="Left" Margin="44,15,0,0" Name="Team1ScoreTextBox" Text="0" ToolTip="Team 1 Score" VerticalAlignment="Top" Width="20" Grid.Column="1" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="433,15,0,0" Name="Team2ScoreTextBox" Text="0" ToolTip="Team 1 Score" VerticalAlignment="Top" Width="20" Grid.Column="1" />
+        <StatusBar Grid.Row="1" Grid.ColumnSpan="2" BorderThickness="0,1,0,0" BorderBrush="Black">
+            <TextBlock>aclprosc2 viewers: 0</TextBlock>
+            <Separator/>
+            <TextBlock>aclprolol viewers: 0</TextBlock>
+        </StatusBar>
     </Grid>
 </Window>
