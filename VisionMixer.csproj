@@ -80,6 +80,9 @@
     <Compile Include="ATEMSwitcher.xaml.cs">
       <DependentUpon>ATEMSwitcher.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Diagnostics.xaml.cs">
+      <DependentUpon>Diagnostics.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
@@ -87,6 +90,10 @@
       <DependentUpon>Starcraft2.xaml</DependentUpon>
     </Compile>
     <Page Include="ATEMSwitcher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Diagnostics.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,6 +136,7 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -149,9 +157,13 @@
     <Resource Include="Resources\settings-icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\diagnostics.png" />
     <Content Include="Resources\PIEHidDotNet.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\XK-24.png" />
+    <Resource Include="Resources\XK-80.png" />
+    <Resource Include="Resources\world-of-tanks-logo.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
